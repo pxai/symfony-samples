@@ -1,0 +1,16 @@
+{% extends "SamplesBlogBundle:Default:layout.html.twig" %}
+{% block title %}Blog sample::{{ post.title }}{% endblock %}
+{% block body %}
+{% trans %}hello{% endtrans %}
+ <div id='posts'>
+		{% include "SamplesBlogBundle:Default:post.html.twig" %}
+		<div class='comments'>
+			<div class='commentheader'>Comments</div>
+			{% for comment in post.comments %}
+				{% include "SamplesBlogBundle:Default:comment.html.twig" %}
+			{% endfor %}
+			{% include "SamplesBlogBundle:Default:newComment.html.twig" %}
+		</div>
+</div>
+
+{% endblock %}

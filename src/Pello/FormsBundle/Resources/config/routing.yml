@@ -1,0 +1,29 @@
+pello_forms_locale:
+    path:     /forms/locale/{_locale}
+    defaults: { _controller: PelloFormsBundle:Default:locale }
+#    requirements: 
+#    	lang: en|es|fr
+
+pello_forms_homepage:
+    path:     /forms
+    defaults: { _controller: PelloFormsBundle:Default:index }
+
+pello_forms_homepage2:
+    path:     /forms/
+    defaults: { _controller: PelloFormsBundle:Default:index }
+
+pello_forms_simple:
+    path:     /forms/simple
+    defaults: { _controller: PelloFormsBundle:Default:simple }
+
+pello_forms_simple_save:
+    path:     /forms/simple/save
+    defaults: { _controller: PelloFormsBundle:Default:simpleSave }
+
+pello_forms_classic:
+    path:     /forms/classic
+    defaults: { _controller: PelloFormsBundle:Default:classic }
+
+pello_forms_classic_save:
+    path:     /forms/classic/save
+    defaults: { _controller: PelloFormsBundle:Default:classicSave }

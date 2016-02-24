@@ -1,0 +1,19 @@
+samples_blog:
+    resource: "@SamplesBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
+pello_forms:
+    resource: "@PelloFormsBundle/Resources/config/routing.yml"
+    prefix:   /
+
+pello_customer_crud:
+    resource: "@PelloCustomerCrudBundle/Resources/config/routing.yml"
+    prefix:   /
+
+acme_demo:
+    resource: "@AcmeDemoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation

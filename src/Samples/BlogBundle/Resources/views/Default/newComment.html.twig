@@ -1,0 +1,6 @@
+
+{# src/Samples/BlogBundle/Resources/views/newComment.html.twig #}
+<div>New Comment</div>
+<form method="post" action="{{ path('samples_blog_new_comment_save') }}">
+    {{ form_widget(form) }}
+</form>

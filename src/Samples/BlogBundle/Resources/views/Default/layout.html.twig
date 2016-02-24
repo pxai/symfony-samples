@@ -1,0 +1,13 @@
+{# src/Samples/BlogBundle/Resources/views/layout.html.twig #}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block title %}Blog sample{% endblock %}</title>
+		{# page 80 #}
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/samplesblog/css/bootstrap.min.css') }}" />
+	</head>
+	<body>
+		{% block body %}{% endblock %}
+		{% include "SamplesBlogBundle:Default:footer.html.twig" %}
+	</body>
+</html>

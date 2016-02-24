@@ -1,0 +1,7 @@
+<div class='comment'>
+		<div class='author'>by {{ comment.user.username }}</div> 
+		<div class='category'>{# { comment.commentdate } #}</div> 
+		<div class='category'>{{ comment.comment }}</div> 
+		        <a href="{{ path('samples_blog_comment_update', {'id': comment.id }) }}">Update</a> |
+                <a href="{{ path('samples_blog_comment_delete', {'id': comment.id }) }}">Delete</a> 
+</div>

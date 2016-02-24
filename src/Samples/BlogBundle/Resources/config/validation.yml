@@ -1,0 +1,18 @@
+Samples\BlogBundle\Entity\Post:
+    getters:
+        title:
+            - NotBlank: {message : 'title.validation.blank'}
+            - Length: { 'min' : 3, 'minMessage' : 'title.validation.min'}
+        text:
+            - NotBlank: {message: 'title.validation.blank'}
+            - Length: { 'min' : 3, 'minMessage' : 'title.validation.min'}
+Samples\BlogBundle\Entity\Comment:
+    getters:
+        comment:
+            - NotBlank: {message : 'comment.validation.blank'}
+            - Length: { 'min' : 3, 'minMessage' : 'comment.validation.min'}
+Samples\BlogBundle\Entity\User:
+    getters:
+        password:
+            - NotBlank: {message : 'comment.validation.blank'}
+            - Length: { 'min' : 3, 'minMessage' : 'comment.validation.min'}

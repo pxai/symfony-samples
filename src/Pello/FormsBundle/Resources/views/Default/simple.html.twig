@@ -1,0 +1,12 @@
+
+{# src/Pello/FormsBundle/Resources/views/simple.html.twig #}
+{% extends "PelloFormsBundle:Default:layout.html.twig" %}
+{% block title %}Pello Forms bundle::Simple{% endblock %}
+{% block body %}
+
+Simple
+<form method="post" action="{{ path('pello_forms_simple_save') }}">
+    {{ form_widget(form) }}
+</form>
+
+{% endblock %}

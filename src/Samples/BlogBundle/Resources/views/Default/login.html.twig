@@ -1,0 +1,15 @@
+
+{# src/Samples/BlogBundle/Resources/views/newPost.html.twig #}
+{% extends "SamplesBlogBundle:Default:layout.html.twig" %}
+{% block title %}Samples blog bundle:: Login {% endblock %}
+{% block body %}
+
+Login - last username {{ last_username }}
+<form method="post" action="{{ path('login_check') }}">
+
+    <div id="user"><div>                <label for="user_username" class="required">Username</label><input type="text" id="user_username" name="_username" required="required" /></div><div>                <label for="user_password" class="required">Password</label><input type="password" id="user_password" name="_password" required="required" /></div><div><button type="submit" id="user_save" name="user[save]">Save</button></div></div>
+
+</form>
+
+
+{% endblock %}

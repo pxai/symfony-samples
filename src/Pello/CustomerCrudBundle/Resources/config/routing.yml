@@ -1,0 +1,31 @@
+pello_customer_crud_homepage:
+    path:     /pello
+    defaults: { _controller: PelloCustomerCrudBundle:Default:index }
+
+pello_customer_crud_homepage_other:
+    path:     /pello/other/{name}/{number}
+    defaults: { _controller: PelloCustomerCrudBundle:Default:other }
+    
+pello_customer_crud_homepage_new:
+    path:     /pello/new
+    defaults: { _controller: PelloCustomerCrudBundle:Default:new }
+
+pello_customer_crud_homepage_savenew:
+    path:     /pello/savenew
+    defaults: { _controller: PelloCustomerCrudBundle:Default:savenew }
+
+pello_customer_crud_homepage_detail:
+    path:     /pello/detail/{id}
+    defaults: { _controller: PelloCustomerCrudBundle:Default:detail }
+
+pello_customer_crud_homepage_update:
+    path:     /pello/update/{id}
+    defaults: { _controller: PelloCustomerCrudBundle:Default:update }
+
+pello_customer_crud_homepage_saveupdate:
+    path:     /pello/saveupdate
+    defaults: { _controller: PelloCustomerCrudBundle:Default:saveupdate }
+
+pello_customer_crud_homepage_delete:
+    path:     /pello/delete/{id}
+    defaults: { _controller: PelloCustomerCrudBundle:Default:delete }

@@ -1,0 +1,71 @@
+samples_blog_locale:
+    path:     /blog/locale/{_locale}
+    defaults: { _controller: SamplesBlogBundle:Default:locale }
+#    requirements: 
+#    	lang: en|es|fr
+samples_blog_login:
+    pattern: /blog/login
+    defaults: { _controller: SamplesBlogBundle:Security:login }
+
+samples_blog_homepage:
+    path:     /blog
+    defaults: { _controller: SamplesBlogBundle:Default:index }
+
+samples_blog_homepage2:
+    path:     /blog/
+    defaults: { _controller: SamplesBlogBundle:Default:index }
+
+samples_blog_new_post:
+    path:     /blog/new
+    defaults: { _controller: SamplesBlogBundle:Post:newPost }
+
+samples_blog_new_post_save:
+    path:     /blog/new/save
+    defaults: { _controller: SamplesBlogBundle:Post:newPostSave }
+
+samples_blog_post_detail:
+    path:     /blog/post/{id}
+    defaults: { _controller: SamplesBlogBundle:Post:detail }
+
+
+samples_blog_post_update_save:
+    path:     /blog/update/save
+    defaults: { _controller: SamplesBlogBundle:Post:updatePostSave }
+
+samples_blog_post_update:
+    path:     /blog/update/{id}
+    defaults: { _controller: SamplesBlogBundle:Post:updatePost }
+
+samples_blog_post_delete:
+    path:     /blog/delete/{id}
+    defaults: { _controller: SamplesBlogBundle:Post:deletePost }
+    requirements: 
+            'id' : '\d+'
+
+samples_blog_post_delete_save:
+    path:     /blog/delete/save/{id}
+    defaults: { _controller: SamplesBlogBundle:Post:deletePostSave }
+    requirements: 
+            'id' : '\d+'
+
+samples_blog_new_comment_save:
+    path:   /blog/new/comment/save
+    defaults: { _controller: SamplesBlogBundle:Comment:newCommentSave }
+
+samples_blog_comment_update_save:
+    path:     /blog/update/comment/save
+    defaults: { _controller: SamplesBlogBundle:Comment:updateCommentSave }
+
+samples_blog_comment_update:
+    path:     /blog/update/comment/{id}
+    defaults: { _controller: SamplesBlogBundle:Comment:updateComment }
+
+
+samples_blog_comment_delete:
+    path:     /blog/delete/comment/{id}
+    defaults: { _controller: SamplesBlogBundle:Comment:deleteComment }
+
+samples_blog_comment_delete_save:
+    path:     /blog/delete/comment/save/{id}
+    defaults: { _controller: SamplesBlogBundle:Comment:deleteCommentSave }
+

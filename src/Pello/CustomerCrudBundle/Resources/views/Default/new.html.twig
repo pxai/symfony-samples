@@ -1,0 +1,20 @@
+Hello yea...
+New Customer
+{% if errors is defined %}
+    {% for error in errors %}
+        <div> {{ error.message }}</div>
+    {% endfor %}
+    {% for key,value in errors %}
+    Key : {{ key }}
+    Value : {{ value }}
+{% endfor %}
+{% endif %}
+<form method="post" action="{{ path('pello_customer_crud_homepage_savenew') }}">
+    <div><label for="name">Name</label></div>
+    <div><input type="text" name="name" value="" /></div>
+    <div><label for="description">Description</label></div>
+    <div><textarea name="description"></textarea></div>
+    <div><input type="submit" name="submit" value="Create new" /></div>
+    
+</form>
+<div><a href="{{ path('pello_customer_crud_homepage_new') }}">New</a> </div>

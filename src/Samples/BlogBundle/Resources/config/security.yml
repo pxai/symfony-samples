@@ -1,0 +1,22 @@
+# WARNING: you must put this file in 
+# app/config/security.yml
+security:
+	firewalls:
+		secured_area:
+			pattern: ^/
+			anonymous: ~
+			http_basic:
+				realm: "Secured Sample Blog"
+
+	access_control:
+		- { path: ^/admin, roles: ROLE_ADMIN }
+
+	providers:
+		in_memory:
+			memory:
+				users:
+					luser: { password: 1234, roles: ’ROLE_USER’ }
+					admin: { password: 1234, roles: ’ROLE_ADMIN’ }
+
+	encoders:
+	Symfony\Component\Security\Core\User\User: plaintext

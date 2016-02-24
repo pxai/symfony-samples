@@ -1,0 +1,13 @@
+{# src/Pello/FormsBundle/Resources/views/layout.html.twig #}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block title %}Pello :: Forms bundle{% endblock %}</title>
+		{# page 80 #}
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/pelloforms/css/bootstrap.min.css') }}" />
+	</head>
+	<body>
+		{% block body %}{% endblock %}
+		{% include "PelloFormsBundle:Default:footer.html.twig" %}
+	</body>
+</html>

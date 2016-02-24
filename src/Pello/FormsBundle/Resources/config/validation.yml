@@ -1,0 +1,8 @@
+Pello\FormsBundle\Entity\User:
+    getters:
+        login:
+            - NotBlank: {message : 'login.validation.blank'}
+            - Length: { 'min' : 3, 'minMessage' : 'login.validation.min'}
+        password:
+            - NotBlank: {message: 'password.validation.blank'}
+            - Length: { 'min' : 3, 'minMessage' : 'password.validation.min'}

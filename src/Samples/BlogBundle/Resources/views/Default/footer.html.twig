@@ -1,0 +1,10 @@
+{# src/Pello/FormsBundle/Resources/views/footer.html.twig #}
+<ul>
+<li><a href="{{ path ('samples_blog_locale', {'_locale':'en'}) }}" title="{% trans %}change.locale{% endtrans %}">{% trans %}en{% endtrans %}</a></li>
+<li><a href="{{ path ('samples_blog_locale', {'_locale':'es'}) }}" title="{% trans %}change.locale{% endtrans %}">{% trans %}es{% endtrans %}</a></li>
+<li><a href="{{ path ('samples_blog_homepage') }}">{% trans %}home{% endtrans %}</a></li>
+{% if app.user.username is defined %}
+	<p>Username: {{ app.user.username }}</p>
+	<li><a href="{{ path ('logout') }}">{% trans %}sign out{% endtrans %}</a></li>
+{% endif %}
+</ul>
